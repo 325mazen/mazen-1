@@ -1,21 +1,21 @@
 import tweepy
 import random
 
-# أكواد مازن - تم وضعها هنا مباشرة وجاهزة للعمل
-raw_bearer_token = 'AAAAAAAAAAAAAAAAAAAAAAAF2b8AEAAAAAATJsF3G%2BbgKOHLALTXafqyjERpC4%3DJemtJvbboUQJiMqrhZPdJHjM0Rmm3BtZScJr1Ud08p09CUGija'
-raw_consumer_key = 'nDb9IQXs1nFgXPJ9OZMMSJ6Zm'
-raw_consumer_secret = 'KcyE10zUGdBdEaJ6Ar0hyU0NQmU1kywFGsJyA9UyQkoHGvqjbP'
-raw_access_token = '2030833849136025601-1VIWKU89uCeifc93ON9fPZVmbmnk94'
-raw_access_token_secret = 'Mw9zeip5yt6WkE5zmQt9VYUNVy6myhKiPBV5kHB5an1nA'
+# أكواد مازن الجديدة من الصور - تم الربط بالملي
+raw_bearer_token = 'AAAAAAAAAAAAAAAAAAAAAAF2b8AEAAAAANcRpKqH7MN8%2FFWqbi20w2VzDU9Y%3D160abmrZTaoMgLI3NRSqy0FoDjsq87QVcxrJ95UbBpzzgVKhG1'
+raw_consumer_key = '8YVRhaWnXsUYpeHXFHXrfEFK3'
+raw_consumer_secret = 'C05oFIV3yWTLcDw3YUiru1Hx6jWgutYiVnEUqYPkPwRyc2EpCi'
+raw_access_token = '2030833849136025601-vQTothKZh1vRxC3NjpgDn3vjn06vKP'
+raw_access_token_secret = 'QNHzhcMZDTVtZJZWR1UCkMAXSyEwm6ocjpRFywIImRyn7'
 
-# تنظيف المفاتيح تلقائياً من أي مسافات مخفية
+# تنظيف المفاتيح تلقائياً
 bearer_token = raw_bearer_token.strip()
 consumer_key = raw_consumer_key.strip()
 consumer_secret = raw_consumer_secret.strip()
 access_token = raw_access_token.strip()
 access_token_secret = raw_access_token_secret.strip()
 
-# قائمة 70 ذكراً منوعة
+# قائمة الأذكار (الـ 70 ذكراً)
 azkar = [
     "سُبْحَانَ اللَّهِ وَبِحَمْدِهِ", "سُبْحَانَ اللَّهِ الْعَظِيمِ", "الْحَمْدُ لِلَّهِ", "لَا إِلَهَ إِلَّا اللَّهُ",
     "اللَّهُ أَكْبَرُ", "لَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِاللَّهِ", "أَسْتَغْفِرُ اللَّهَ وَأَتُوبُ إِلَيْهِ",
@@ -48,7 +48,7 @@ azkar = [
 
 def tweet():
     try:
-        # الاتصال بتويتر باستخدام المكتبة
+        # الاتصال باستخدام نظام V2 الأضمن للنشر
         client = tweepy.Client(
             bearer_token=bearer_token,
             consumer_key=consumer_key,
