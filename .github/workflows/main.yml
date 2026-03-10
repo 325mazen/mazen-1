@@ -21,4 +21,4 @@ jobs:
         run: pip install tweepy
 
       - name: Run bot
-        run: python بوت
+        run: python bot.py بوت
