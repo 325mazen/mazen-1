@@ -1,0 +1,24 @@
+name: Azkar Bot Schedule
+
+on:
+  schedule:
+    - cron: '0 * * * *'  # يغرد كل ساعة
+  workflow_dispatch:      # لتشغيله يدوياً للتجربة
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.9'
+
+      - name: Install dependencies
+        run: pip install tweepy
+
+      - name: Run bot
+        run: python بوت
